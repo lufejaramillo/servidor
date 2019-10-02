@@ -3,8 +3,10 @@ import time
 
 HOST = '192.168.1.6'  # Standard loopback interface address (localhost)
 PORT = 65432        # puerto de escucha (puertos no privilegiados > 1024)
+
 Hora = time.strftime("%H:%M:%S;")
 Fecha = time.strftime("%Y/%m/%d")
+
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
