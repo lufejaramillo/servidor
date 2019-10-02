@@ -2,7 +2,7 @@
 
 import socket
 
-HOST = '192.168.1.6'  # The server's hostname or IP address
+HOST = '192.168.1.6'  # The hola hola probando server's hostname or IP address
 PORT = 65432        # The port used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
