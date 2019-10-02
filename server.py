@@ -3,7 +3,7 @@ import time
 
 # Servidor
 
-HOST = '192.168.1.6'  # Standard loopback interface address
+HOST = '192.168.1.6'  # Dirección IP o Hostname del servidor
 PORT = 65432        # Puerto de escucha (puertos no privilegiados > 1024)
 
 Hora = time.strftime("%H:%M:%S;")
