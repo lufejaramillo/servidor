@@ -14,6 +14,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.listen()
     conn, addr = s.accept()
     with conn:
+        with open("log.txt", "a+") as f:
+            f.write(
+                Fecha + " " + Hora + " " + "Conexión recibida desde" +
+                ' ' + str(addr[0]) + "\n")
         print(Fecha + " " + Hora + " " + "Conexión recibida desde", addr[0])
         while True:
             data = conn.recv(1024)
